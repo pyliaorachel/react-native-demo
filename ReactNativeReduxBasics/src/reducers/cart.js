@@ -1,4 +1,5 @@
-import { CLEAR_CART } from '../actions/cart';
+import { addObjects } from '../utils/utils';
+import { CLEAR_CART, ADD_ONE_TO_CART } from '../actions/cart';
 
 
 export default function cart(state = {
@@ -12,6 +13,8 @@ export default function cart(state = {
   switch (action.type) {
     case CLEAR_CART:
       return {};
+    case ADD_ONE_TO_CART:
+      return Object.assign({}, state, addObjects(state, action.items));
     default:
       return state;
   }

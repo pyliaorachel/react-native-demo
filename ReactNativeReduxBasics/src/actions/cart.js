@@ -6,3 +6,18 @@ export function clearCart() {
     type: CLEAR_CART,
   };
 }
+
+
+export const ADD_ONE_TO_CART = 'ADD_ONE_TO_CART';
+
+
+export function addOneToCart(section, item) {
+  return {
+    type: ADD_ONE_TO_CART,
+    items: {
+      [section]: {
+        [item]: 1,
+      },
+    },
+  };
+}

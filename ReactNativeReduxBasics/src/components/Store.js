@@ -15,13 +15,20 @@ class Store extends Component {
   }
 
   renderSection(items, section) {
+    const { addOneToCart } = this.props;
     return (
       <View>
         <Text style={styles.sectionTitle}>{ section }</Text>
         <View>
         {
           Object.keys(items).map((item, i) => {
-            return <Text key={i}>{ item }: { items[item] }</Text>;
+            return (
+              <TouchableHighlight key={i}
+                onPress={() => addOneToCart(section, item)}
+              >
+                <Text>{ item }: { items[item] }</Text>
+              </TouchableHighlight>
+            );
           })
         }
         </View>

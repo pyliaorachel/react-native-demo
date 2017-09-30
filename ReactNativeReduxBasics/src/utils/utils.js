@@ -12,3 +12,15 @@ export function subtractObjects(src, toSubtract) {
    
   return _.mergeWith(srcCopy, toSubtract, customizer);
 }
+
+export function addObjects(src, toAdd) {
+  const srcCopy = Object.assign({}, src);
+  
+  function customizer(a, b) {
+    if (_.isNumber(a)) {
+      return a + b;
+    }
+  }
+    
+  return _.mergeWith(srcCopy, toAdd, customizer);
+}
