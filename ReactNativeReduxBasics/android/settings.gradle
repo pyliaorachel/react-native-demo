@@ -1,0 +1,3 @@
+rootProject.name = 'ReactNativeReduxBasics'
+
+include ':app'
