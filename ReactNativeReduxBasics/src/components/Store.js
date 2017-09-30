@@ -14,14 +14,14 @@ class Store extends Component {
     Actions.cart(ActionConst.REPLACE);
   }
 
-  renderSection(stock, section) {
+  renderSection(items, section) {
     return (
       <View>
         <Text style={styles.sectionTitle}>{ section }</Text>
         <View>
         {
-          Object.keys(stock).map((item, i) => {
-            return <Text key={i}>{ item }: { stock[item] }</Text>;
+          Object.keys(items).map((item, i) => {
+            return <Text key={i}>{ item }: { items[item] }</Text>;
           })
         }
         </View>
@@ -31,6 +31,7 @@ class Store extends Component {
 
   render() {
     const { store } = this.props;
+
     return (
       <View style={styles.container}>
 
