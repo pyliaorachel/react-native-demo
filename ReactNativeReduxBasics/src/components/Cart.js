@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import { Actions, ActionConst } from 'react-native-router-flux';
 
 
 class Cart extends Component {
