@@ -6,16 +6,18 @@ import { Actions, ActionConst } from 'react-native-router-flux';
 class Cart extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-
-    };
   }
 
   render() {
+    const { cart } = this.props;
+
     return (
       <View style={styles.container}>
-        <Text>Hello Cart!</Text>
+        {
+          Object.keys(cart).map((item, i) => {
+            return <Text key={i}>{ item }: { cart[item] }</Text>;
+          })
+        }
       </View>
     );
   }
