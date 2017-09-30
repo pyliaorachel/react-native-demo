@@ -17,7 +17,7 @@ class Root extends Component {
         <RouterWithRedux>
           <Scene key='root'>
             <Scene key='store' component={ Store } title='Store' />
-            <Scene initial key='cart' component={ Cart } title='Cart' />
+            <Scene key='cart' component={ Cart } title='Cart' />
           </Scene>
         </RouterWithRedux>
       </Provider>

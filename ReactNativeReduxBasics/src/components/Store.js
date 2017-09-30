@@ -6,8 +6,6 @@ import { Actions, ActionConst } from 'react-native-router-flux';
 class Store extends Component {
   constructor(props) {
     super(props);
-
-    this.renderSection = this.renderSection.bind(this);
   }
 
   renderSection(stock, section) {
