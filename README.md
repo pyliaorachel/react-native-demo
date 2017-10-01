@@ -11,10 +11,12 @@ Demo - React Native Basics & Redux Basics.
   
   # ReactNativeBasics - using create-react-native-app & Expo
   $ cd react-native-demo/ReactNativeBasics
+  $ yarn install
   $ npm start
   
   # ReactNativeReduxBasics - using react-native-cli
   $ cd react-native-demo/ReactNativeReduxBasics
+  $ yarn install
   $ react-native run-ios
   ```
   
