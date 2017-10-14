@@ -1,7 +1,8 @@
 # react-native-demo
 
 Demo - React Native Basics & Redux Basics.  
-[Presentation Slides (SITCON HK 2017)](https://docs.google.com/presentation/d/19DU7yhsr0jvPBcUY751Jdb6kBoYgBk2iK9aA_qvwosA/edit?usp=sharing)
+[Presentation Slides (SITCON HK 2017)](https://docs.google.com/presentation/d/19DU7yhsr0jvPBcUY751Jdb6kBoYgBk2iK9aA_qvwosA/edit?usp=sharing)  
+[Presentation Video](https://youtu.be/8favjxhj7vs)
 
 #### Usage
 
